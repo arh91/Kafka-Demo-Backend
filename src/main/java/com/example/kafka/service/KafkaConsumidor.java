@@ -17,6 +17,7 @@ public class KafkaConsumidor {
     public void escucharMensajes(String contenido) {
         Mensaje mensaje = new Mensaje();
         mensaje.setContenido(contenido);
+        mensaje.setRemitente("Usuario");
         mensajeRepository.save(mensaje);
         System.out.println("Mensaje recibido y guardado en BD: " + contenido);
     }
