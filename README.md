@@ -82,30 +82,31 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
 
 1. Start ZooKeeper:
 
-&emsp;&emsp;- Windows:
+&emsp;&emsp;- In Windows, open a terminal and navigate to the path C:\kafka\bin\windows, and once there, enter:
   
   ```sh
-  zookeeper-server-start.bat config\zookeeper.properties
+  zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
   ```
   
-&emsp;&emsp;- Linux/macOS:
+&emsp;&emsp;- In Linux/macOS, open a terminal and navigate to the path /usr/local/kafka/bin, and once there, enter:
+  :
   
   ```sh
-  bin/zookeeper-server-start.sh config/zookeeper.properties
+  zookeeper-server-start.sh /usr/local/kafka/config/zookeeper.properties
   ```
 
 2. Start Kafka Broker:
 
-&emsp;&emsp;- Windows:
+&emsp;&emsp;- In Windows, open a terminal and navigate to the path C:\kafka\bin\windows, and once there, enter:
   
   ```sh
-  kafka-server-start.bat config\server.properties
+  kafka-server-start.bat C:\kafka\config\server.properties
   ```
   
-&emsp;&emsp;- Linux/macOS:
+&emsp;&emsp;- In Linux/macOS, open a terminal and navigate to the path /usr/local/kafka/bin, and once there, enter:
   
   ```sh
-  bin/kafka-server-start.sh config/server.properties
+  kafka-server-start.sh /usr/local/kafka/config/server.properties
   ```
 
 ⚠️ Make sure port 2181 (ZooKeeper) and 9092 (Kafka) are not blocked by firewalls or in use by other processes.
