@@ -45,10 +45,10 @@ git clone https://github.com/arh91/Kafka-Demo-Backend.git
 
 ## Set Up the Database 
 
-Ensure MySQL is installed and running locally. Create a database named usuarios_db:
+Ensure MySQL is installed and running locally. Create a database named mensajes_kafka:
 
 ```sh
-CREATE DATABASE usuarios_db;
+CREATE DATABASE mensajes_kafka;
 ```
 
 
@@ -57,12 +57,17 @@ CREATE DATABASE usuarios_db;
 Edit src/main/resources/application.properties to set up the database connection:
 
 ```sh
-spring.datasource.url=jdbc:mysql://localhost:3306/usuarios_db
+spring.datasource.url=jdbc:mysql://localhost:3306/mensajes_kafka
 spring.datasource.username=your_username
 spring.datasource.password=your_password
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.show-sql=true
+spring.kafka.bootstrap-servers=localhost:9092
+spring.kafka.consumer.group-id=grupo-demo
+spring.kafka.consumer.auto-offset-reset=earliest
+spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+
 ```
 
 
