@@ -52,9 +52,9 @@ git clone https://github.com/arh91/Kafka-Demo-Backend.git
 
 ### How to Install Kafka
 
-* Download Kafka: Go to the official Apache Kafka downloads page and download the latest binary release (e.g., kafka_2.13-3.6.0).
+1. Download Kafka: Go to the official Apache Kafka downloads page and download the latest binary release (e.g., kafka_2.13-3.6.0).
 
-* Extract and Move the Folder: It's recommended to place Kafka in a permanent location on your system. For example:
+2. Extract and Move the Folder: It's recommended to place Kafka in a permanent location on your system. For example:
 
   - On Windows: C:\Kafka
 
