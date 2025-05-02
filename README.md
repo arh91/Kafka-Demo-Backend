@@ -129,11 +129,11 @@ kafka-topics.bat --create --topic spring-kafka --bootstrap-server localhost:9092
 kafka-topics.sh --create --topic spring-kafka --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 ```
 
-This command will create a new topic named spring-kafka with:
+&emsp;&emsp;This command will create a new topic named spring-kafka with:
 
-- 1 partition
+&emsp;&emsp;- 1 partition
 
-- 1 replication factor (ideal for local testing; for production, you'd typically set this higher)
+&emsp;&emsp;- 1 replication factor (ideal for local testing; for production, you'd typically set this higher)
 
 2. Verify the Topic:
 
