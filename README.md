@@ -52,15 +52,15 @@ git clone https://github.com/arh91/Kafka-Demo-Backend.git
 
 ### How to Install Kafka
 
-1. Download Kafka: Go to the official Apache Kafka downloads page and download the latest binary release (e.g., kafka_2.13-3.6.0).
+**1. Download Kafka:** Go to the official Apache Kafka downloads page and download the latest binary release (e.g., kafka_2.13-3.6.0).
 
-2. Extract and Move the Folder: It's recommended to place Kafka in a permanent location on your system. For example:
+**2. Extract and Move the Folder:** It's recommended to place Kafka in a permanent location on your system. For example:
 
 &emsp;&emsp;- On Windows: C:\Kafka
 
 &emsp;&emsp;- On Linux/macOS: /usr/local/kafka or inside your home directory ~/kafka
 
-3. Set Environment Variables (Optional but Recommended): Add the bin directory to your system’s PATH:
+**3. Set Environment Variables (Optional but Recommended):** Add the bin directory to your system’s PATH:
 
 &emsp;&emsp;- Windows:
 
@@ -80,7 +80,7 @@ Kafka requires ZooKeeper to run, so you must start it before launching the Kafka
 
 If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entirely, but it's still required for now unless you're using KRaft mode.
 
-1. Start ZooKeeper:
+**1. Start ZooKeeper:**
 
 &emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter:
   
@@ -95,7 +95,7 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
   zookeeper-server-start.sh /usr/local/kafka/config/zookeeper.properties
   ```
 
-2. Start Kafka Broker:
+**2. Start Kafka Broker:**
 
 &emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter:
   
@@ -115,7 +115,7 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
 ## Create a Kafka Topic
 Once Kafka and ZooKeeper are running, you can create a Kafka topic named **spring-kafka** using the following command:
 
-1. Create the Topic:
+**1. Create the Topic:**
 
 &emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter::
 
@@ -135,7 +135,7 @@ kafka-topics.sh --create --topic spring-kafka --bootstrap-server localhost:9092 
 
 &emsp;&emsp;- 1 replication factor (ideal for local testing; for production, you'd typically set this higher)
 
-2. Verify the Topic was created:
+**2. Verify the Topic was created:**
 
 &emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter::
 
