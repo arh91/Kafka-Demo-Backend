@@ -11,7 +11,7 @@ This backend is a simple messaging application built with Spring Boot and integr
 
 The application works in three parts:
 
-- Sending Messages (Producer): When a user sends a message from the frontend, the backend receives it via a REST endpoint (/api/mensajes/enviar). This message is forwarded to a Kafka topic (spring-kafka) using a   Kafka producer service.
+- **Sending Messages (Producer):** When a user sends a message from the frontend, the backend receives it via a REST endpoint (/api/mensajes/enviar). This message is forwarded to a Kafka topic (spring-kafka) using a   Kafka producer service.
 
 - Receiving Messages (Consumer): A Kafka listener (@KafkaListener) automatically listens to the same topic. Every time a new message arrives, the listener processes it and saves it to the database using JPA.
 
