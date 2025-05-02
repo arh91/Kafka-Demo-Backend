@@ -56,9 +56,9 @@ git clone https://github.com/arh91/Kafka-Demo-Backend.git
 
 2. Extract and Move the Folder: It's recommended to place Kafka in a permanent location on your system. For example:
 
-  - On Windows: C:\Kafka
+&emsp;&emsp;- On Windows: C:\Kafka
 
-  - On Linux/macOS: /usr/local/kafka or inside your home directory ~/kafka
+&emsp;&emsp;- On Linux/macOS: /usr/local/kafka or inside your home directory ~/kafka
 
 3. Set Environment Variables (Optional but Recommended): Add the bin directory to your system’s PATH:
 
