@@ -7,12 +7,15 @@
 
 ## Description
 
-Backend service for user management in a web application, developed with Java and Spring Boot. It provides basic operations such as:
+This backend is a simple messaging application built with Spring Boot and integrated with Apache Kafka for asynchronous message processing. It enables users to send and receive messages through a Kafka topic, with all messages being stored in a relational database (e.g., MySQL).
 
-- Creating new users.
-- Listing all users.
-- Updating user details.
-- Deleting a user.
+The application works in three parts:
+
+- Sending Messages (Producer): When a user sends a message from the frontend, the backend receives it via a REST endpoint (/api/mensajes/enviar). This message is forwarded to a Kafka topic (spring-kafka) using a   Kafka producer service.
+
+- Receiving Messages (Consumer): A Kafka listener (@KafkaListener) automatically listens to the same topic. Every time a new message arrives, the listener processes it and saves it to the database using JPA.
+
+- Retrieving Messages: A separate REST endpoint (/api/mensajes/listar) allows the frontend to fetch all saved messages directly from the database.
 
 This service uses a local MySQL database to store user data.
 
@@ -29,12 +32,14 @@ The project is organized into the following folders:
 
 ## Technologies Used
 
-- Kafka
 - Java 17 (or higher)
-- Spring Boot (latest version)
-- Spring Data JPA
-- MySQL
-- Maven
+- Spring Boot (latest version): Main framework for building the REST API.
+- Spring Kafka: For producing and consuming Kafka messages.
+- Apache Kafka: Message broker used for asynchronous communication.
+- Spring Data JPA: For object-relational mapping and database persistence.
+- MySQL: Database for storing message data.
+- Maven: Dependency and build management tool.
+  
 
 ## Clone the Repository
 
