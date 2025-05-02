@@ -82,13 +82,13 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
 
 **1. Start ZooKeeper:**
 
-&emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter:
+&emsp;&emsp;- **In Windows**, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter:
   
   ```sh
   zookeeper-server-start.bat C:\kafka\config\zookeeper.properties
   ```
   
-&emsp;&emsp;- In Linux/macOS, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter:
+&emsp;&emsp;- **In Linux/macOS**, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter:
   :
   
   ```sh
@@ -97,13 +97,13 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
 
 **2. Start Kafka Broker:**
 
-&emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter:
+&emsp;&emsp;- **In Windows**, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter:
   
   ```sh
   kafka-server-start.bat C:\kafka\config\server.properties
   ```
   
-&emsp;&emsp;- In Linux/macOS, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter:
+&emsp;&emsp;- **In Linux/macOS**, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter:
   
   ```sh
   kafka-server-start.sh /usr/local/kafka/config/server.properties
@@ -117,13 +117,13 @@ Once Kafka and ZooKeeper are running, you can create a Kafka topic named **sprin
 
 **1. Create the Topic:**
 
-&emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter::
+&emsp;&emsp;- **In Windows**, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter::
 
 ```cmd
 kafka-topics.bat --create --topic spring-kafka --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 ```
 
-&emsp;&emsp;- In Linux/macOS, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter::
+&emsp;&emsp;- **In Linux/macOS**, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter::
 
 ```bash
 kafka-topics.sh --create --topic spring-kafka --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
@@ -137,13 +137,13 @@ kafka-topics.sh --create --topic spring-kafka --bootstrap-server localhost:9092 
 
 **2. Verify the Topic was created:**
 
-&emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter::
+&emsp;&emsp;- **In Windows**, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter::
 
 ```cmd
 kafka-topics.bat --list --bootstrap-server localhost:9092
 ```
 
-&emsp;&emsp;- In Linux/macOS, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter::
+&emsp;&emsp;- **In Linux/macOS**, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter::
 
 ```bash
 kafka-topics.sh --list --bootstrap-server localhost:9092
@@ -208,7 +208,7 @@ mvn test
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />
-Feel free to check [issues page](https://github.com/arh91/Gestion-Usuarios-Backend/issues). 
+Feel free to check [issues page](https://github.com/arh91/Kafka-Demo-Backend/issues). 
 
 
 ## Show your support
