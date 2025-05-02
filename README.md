@@ -13,9 +13,9 @@ The application works in three parts:
 
 - **Sending Messages (Producer):** When a user sends a message from the frontend, the backend receives it via a REST endpoint (/api/mensajes/enviar). This message is forwarded to a Kafka topic (spring-kafka) using a   Kafka producer service.
 
-- Receiving Messages (Consumer): A Kafka listener (@KafkaListener) automatically listens to the same topic. Every time a new message arrives, the listener processes it and saves it to the database using JPA.
+- **Receiving Messages (Consumer):** A Kafka listener (@KafkaListener) automatically listens to the same topic. Every time a new message arrives, the listener processes it and saves it to the database using JPA.
 
-- Retrieving Messages: A separate REST endpoint (/api/mensajes/listar) allows the frontend to fetch all saved messages directly from the database.
+- **Retrieving Messages:** A separate REST endpoint (/api/mensajes/listar) allows the frontend to fetch all saved messages directly from the database.
 
 This service uses a local MySQL database to store user data.
 
@@ -24,21 +24,21 @@ This service uses a local MySQL database to store user data.
 
 The project is organized into the following folders:
 
-**- Controller:** Handles HTTP requests and responses (like sending or listing messages).
-**- Model:** Defines the Mensaje entity.
-**- Service:** Contains the Kafka producer and consumer logic.
-**- Repository:** Interface for database access using Spring Data JPA.
+- **Controller:** Handles HTTP requests and responses (like sending or listing messages).
+- **Model:** Defines the Mensaje entity.
+- **Service:** Contains the Kafka producer and consumer logic.
+- **Repository:** Interface for database access using Spring Data JPA.
 
 
 ## Technologies Used
 
-**- Java 17 (or higher).**
-**- Spring Boot (latest version):** Main framework for building the REST API.
-**- Spring Kafka:** For producing and consuming Kafka messages.
-**- Apache Kafka:** Message broker used for asynchronous communication.
-**- Spring Data JPA:** For object-relational mapping and database persistence.
-**- MySQL:** Database for storing message data.
-**- Maven:** Dependency and build management tool.
+- **Java 17 (or higher).**
+- **Spring Boot (latest version):** Main framework for building the REST API.
+- **Spring Kafka:** For producing and consuming Kafka messages.
+- **Apache Kafka:** Message broker used for asynchronous communication.
+- **Spring Data JPA:** For object-relational mapping and database persistence.
+- **MySQL:** Database for storing message data.
+- **Maven:** Dependency and build management tool.
   
 
 ## Clone the Repository
