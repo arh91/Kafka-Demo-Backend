@@ -113,20 +113,20 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
 
 
 ## Create a Kafka Topic
-Once Kafka and ZooKeeper are running, you can create a Kafka topic named spring-kafka using the following command:
+Once Kafka and ZooKeeper are running, you can create a Kafka topic named **spring-kafka** using the following command:
 
 1. Create the Topic:
 
-&emsp;&emsp;-Windows:
+&emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter::
 
 ```cmd
-C:\Kafka\bin\windows\kafka-topics.bat --create --topic spring-kafka --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+kafka-topics.bat --create --topic spring-kafka --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 ```
 
-&emsp;&emsp;-Linux/macOS:
+&emsp;&emsp;- In Linux/macOS, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter::
 
 ```bash
-/usr/local/kafka/bin/kafka-topics.sh --create --topic spring-kafka --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+kafka-topics.sh --create --topic spring-kafka --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 ```
 
 This command will create a new topic named spring-kafka with:
@@ -139,16 +139,16 @@ This command will create a new topic named spring-kafka with:
 
 To check if the topic was created successfully, use the following command:
 
-&emsp;&emsp;-Windows:
+&emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter::
 
 ```cmd
-C:\Kafka\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+kafka-topics.bat --list --bootstrap-server localhost:9092
 ```
 
-&emsp;&emsp;-Linux/macOS:
+&emsp;&emsp;- In Linux/macOS, open a terminal and navigate to the path  **/usr/local/kafka/bin** , and once there, enter::
 
 ```bash
-/usr/local/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
 
 This will list all topics in Kafka, including spring-kafka.
