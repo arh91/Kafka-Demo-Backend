@@ -52,33 +52,27 @@ git clone https://github.com/arh91/Kafka-Demo-Backend.git
 
 ### How to Install Kafka
 
-1. Download Kafka:
+1. Download Kafka: Go to the official Apache Kafka downloads page and download the latest binary release (e.g., kafka_2.13-3.6.0).
 
-Go to the official Apache Kafka downloads page and download the latest binary release (e.g., kafka_2.13-3.6.0).
+2. Extract and Move the Folder: It's recommended to place Kafka in a permanent location on your system. For example:
 
-2. Extract and Move the Folder:
+  - On Windows: C:\Kafka
 
-It's recommended to place Kafka in a permanent location on your system. For example:
+  - On Linux/macOS: /usr/local/kafka or inside your home directory ~/kafka
 
-- On Windows: C:\Kafka
+3. Set Environment Variables (Optional but Recommended): Add the bin directory to your system’s PATH:
 
-- On Linux/macOS: /usr/local/kafka or inside your home directory ~/kafka
+  - Windows:
 
-3. Set Environment Variables (Optional but Recommended):
-
-Add the bin directory to your system’s PATH:
-
-- Windows:
-
-```makefile
-C:\Kafka\bin\windows
-```
-
-- Linux/macOS:
-
-```ruby
-export PATH=$PATH:/usr/local/kafka/bin
-```
+  ```makefile
+  C:\Kafka\bin\windows
+  ```
+  
+  - Linux/macOS:
+  
+  ```ruby
+  export PATH=$PATH:/usr/local/kafka/bin
+  ```
 
 ### How to Run Kafka
 
@@ -88,31 +82,31 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
 
 1. Start ZooKeeper:
 
-- Windows:
-
-```sh
-zookeeper-server-start.bat config\zookeeper.properties
-```
-
-- Linux/macOS:
-
-```sh
-bin/zookeeper-server-start.sh config/zookeeper.properties
-```
+  - Windows:
+  
+  ```sh
+  zookeeper-server-start.bat config\zookeeper.properties
+  ```
+  
+  - Linux/macOS:
+  
+  ```sh
+  bin/zookeeper-server-start.sh config/zookeeper.properties
+  ```
 
 2. Start Kafka Broker:
 
-- Windows:
-
-```sh
-kafka-server-start.bat config\server.properties
-```
-
-- Linux/macOS:
-
-```sh
-bin/kafka-server-start.sh config/server.properties
-```
+  - Windows:
+  
+  ```sh
+  kafka-server-start.bat config\server.properties
+  ```
+  
+  - Linux/macOS:
+  
+  ```sh
+  bin/kafka-server-start.sh config/server.properties
+  ```
 
 ⚠️ Make sure port 2181 (ZooKeeper) and 9092 (Kafka) are not blocked by firewalls or in use by other processes.
 
