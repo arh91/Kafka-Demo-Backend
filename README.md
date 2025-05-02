@@ -112,6 +112,48 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
 ⚠️ Make sure port 2181 (ZooKeeper) and 9092 (Kafka) are not blocked by firewalls or in use by other processes.
 
 
+## Create a Kafka Topic
+Once Kafka and ZooKeeper are running, you can create a Kafka topic named spring-kafka using the following command:
+
+1. Create the Topic:
+
+&emsp;&emsp;-Windows:
+
+```cmd
+C:\Kafka\bin\windows\kafka-topics.bat --create --topic spring-kafka --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+```
+
+&emsp;&emsp;-Linux/macOS:
+
+```bash
+/usr/local/kafka/bin/kafka-topics.sh --create --topic spring-kafka --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+```
+
+This command will create a new topic named spring-kafka with:
+
+- 1 partition
+
+- 1 replication factor (ideal for local testing; for production, you'd typically set this higher)
+
+2. Verify the Topic:
+
+To check if the topic was created successfully, use the following command:
+
+&emsp;&emsp;-Windows:
+
+```cmd
+C:\Kafka\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+```
+
+&emsp;&emsp;-Linux/macOS:
+
+```bash
+/usr/local/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+```
+
+This will list all topics in Kafka, including spring-kafka.
+
+
 ## Set Up the Database 
 
 Ensure MySQL is installed and running locally. Create a database named mensajes_kafka:
