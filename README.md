@@ -135,9 +135,7 @@ kafka-topics.sh --create --topic spring-kafka --bootstrap-server localhost:9092 
 
 &emsp;&emsp;- 1 replication factor (ideal for local testing; for production, you'd typically set this higher)
 
-2. Verify the Topic:
-
-To check if the topic was created successfully, use the following command:
+2. Verify the Topic was created:
 
 &emsp;&emsp;- In Windows, open a terminal and navigate to the path  **C:\kafka\bin\windows** , and once there, enter::
 
