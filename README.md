@@ -64,13 +64,13 @@ git clone https://github.com/arh91/Kafka-Demo-Backend.git
 
 &emsp;&emsp;- Windows:
 
-  ```makefile
+ &emsp;&emsp; ```makefile
   C:\Kafka\bin\windows
   ```
   
 &emsp;&emsp;- Linux/macOS:
   
-  ```ruby
+ &emsp;&emsp; ```ruby
   export PATH=$PATH:/usr/local/kafka/bin
   ```
 
