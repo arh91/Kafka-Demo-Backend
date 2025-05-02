@@ -62,13 +62,13 @@ git clone https://github.com/arh91/Kafka-Demo-Backend.git
 
 3. Set Environment Variables (Optional but Recommended): Add the bin directory to your system’s PATH:
 
-  - Windows:
+&emsp;&emsp;- Windows:
 
   ```makefile
   C:\Kafka\bin\windows
   ```
   
-  - Linux/macOS:
+&emsp;&emsp;- Linux/macOS:
   
   ```ruby
   export PATH=$PATH:/usr/local/kafka/bin
@@ -82,13 +82,13 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
 
 1. Start ZooKeeper:
 
-  - Windows:
+&emsp;&emsp;- Windows:
   
   ```sh
   zookeeper-server-start.bat config\zookeeper.properties
   ```
   
-  - Linux/macOS:
+&emsp;&emsp;- Linux/macOS:
   
   ```sh
   bin/zookeeper-server-start.sh config/zookeeper.properties
@@ -96,13 +96,13 @@ If you're using Kafka 3.x+, note that future versions may remove ZooKeeper entir
 
 2. Start Kafka Broker:
 
-  - Windows:
+&emsp;&emsp;- Windows:
   
   ```sh
   kafka-server-start.bat config\server.properties
   ```
   
-  - Linux/macOS:
+&emsp;&emsp;- Linux/macOS:
   
   ```sh
   bin/kafka-server-start.sh config/server.properties
