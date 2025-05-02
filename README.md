@@ -24,21 +24,21 @@ This service uses a local MySQL database to store user data.
 
 The project is organized into the following folders:
 
-- Controller: Handles HTTP requests and responses (like sending or listing messages).
-- Model: Defines the Mensaje entity.
-- Service: Contains the Kafka producer and consumer logic.
-- Repository: Interface for database access using Spring Data JPA.
+**- Controller:** Handles HTTP requests and responses (like sending or listing messages).
+**- Model:** Defines the Mensaje entity.
+**- Service:** Contains the Kafka producer and consumer logic.
+**- Repository:** Interface for database access using Spring Data JPA.
 
 
 ## Technologies Used
 
-- Java 17 (or higher).
-- Spring Boot (latest version): Main framework for building the REST API.
-- Spring Kafka: For producing and consuming Kafka messages.
-- Apache Kafka: Message broker used for asynchronous communication.
-- Spring Data JPA: For object-relational mapping and database persistence.
-- MySQL: Database for storing message data.
-- Maven: Dependency and build management tool.
+**- Java 17 (or higher).**
+**- Spring Boot (latest version):** Main framework for building the REST API.
+**- Spring Kafka:** For producing and consuming Kafka messages.
+**- Apache Kafka:** Message broker used for asynchronous communication.
+**- Spring Data JPA:** For object-relational mapping and database persistence.
+**- MySQL:** Database for storing message data.
+**- Maven:** Dependency and build management tool.
   
 
 ## Clone the Repository
